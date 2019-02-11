@@ -60,13 +60,13 @@ public class Student {
     public void Sports(boolean sports){
         this.Sports=sports;
     }
-    public String GetStudentInformation(){
+    public String ToString(){
         String deporte = this.Sports ? "Sí":"No";
-        return  "Nombre: "+this.Name+
-                "Teléfono: "+this.Phone+
-                "Escolaridad: "+this.SchoolLevel+
-                "Género; "+this.Gender+
-                "Libro Favorito: "+this.FavoriteBook+
+        return  "Nombre: "+this.Name+System.lineSeparator()+
+                "Teléfono: "+this.Phone+System.lineSeparator()+
+                "Escolaridad: "+this.SchoolLevel+System.lineSeparator()+
+                "Género; "+this.Gender+System.lineSeparator()+
+                "Libro Favorito: "+this.FavoriteBook+System.lineSeparator()+
                 "Practica deporte: "+deporte ;
     }
 }
