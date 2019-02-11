@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/margin"
+    android:paddingRight="@dimen/margin">
+
+    <EditText
+        android:id="@+id/name_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name_placeholder"
+        android:inputType="textShortMessage" />
+
+    <EditText
+        android:id="@+id/phone_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_et"
+        android:hint="@string/phone_placeholder"
+        android:inputType="textShortMessage" />
+
+    <TextView
+        android:id="@+id/escolaridad_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_et"
+        android:text="@string/escolaridad_label_string"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text" />
+
+    <Spinner
+        android:id="@+id/escolaridad_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/escolaridad_label"
+        android:entries="@array/escolaridad_array" />
+
+    <TextView
+        android:id="@+id/gender_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/escolaridad_spinner"
+        android:text="@string/gender_label_string"
+        android:textSize="@dimen/text"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gender_label"
+        android:orientation='horizontal'>
+        android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:text="@string/radio_female" />
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/radio_male" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/book_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGender"
+        android:text="@string/favorite_book_string"
+        android:textSize="@dimen/text"
+        android:textStyle="bold" />
+
+    <AutoCompleteTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/book_autocomplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_label" />
+
+    <CheckBox
+        android:id="@+id/checkbox_sport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_autocomplete"
+        android:checked="false"
+        android:text="@string/checkbox_string"></CheckBox>
+
+    <Button
+        android:id="@+id/clean_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="cleanData"
+        android:text="@string/clean_button_string" />
+</RelativeLayout>

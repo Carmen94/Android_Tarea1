@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Tarea 1</string>
+    <string name="name_placeholder">Ingrese su nombre</string>
+    <string name="phone_placeholder">Ingrese su Teléfono</string>
+    <string name="clean_button_string">Limpiar</string>
+    <string name="escolaridad_label_string">Escolaridad</string>
+    <string name="save_string">Save</string>
+    <string name="gender_label_string">Género</string>
+    <string name="favorite_book_string">Libro favorito</string>
+    <string name="radio_male">Masculino</string>
+    <string name="radio_female">Femenino</string>
+    <string name="checkbox_string">Practica deporte</string>
+
+
+    <string-array name="escolaridad_array">
+        <item>Bachillerato</item>
+        <item>Técnico</item>
+        <item>Licenciatura</item>
+        <item>Maestría</item>
+        <item>Doctorado</item>
+    </string-array>
+
+    <string-array name="books_array">
+        <item>1Q84</item>
+        <item>El Origen</item>
+        <item>El principito</item>
+        <item>El Resplandor</item>
+        <item>Paprika</item>
+    </string-array>
+</resources>
